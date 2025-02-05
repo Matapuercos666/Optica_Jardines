@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/Imagenes">
+        <file>IMAGENES/LOGOS/LOGO.png</file>
+    </qresource>
+    <qresource prefix="/fuentes">
+        <file>FUENTES/Lato/Lato-Thin.ttf</file>
+        <file>FUENTES/Raleway/static/Raleway-ExtraLight.ttf</file>
+        <file>FUENTES/Roboto_Condensed/static/RobotoCondensed-Regular.ttf</file>
+        <file>FUENTES/Montserrat/static/Montserrat-Italic.ttf</file>
+        <file>FUENTES/Playfair/static/Playfair_9pt_SemiCondensed-Bold.ttf</file>
+    </qresource>
+</RCC>
