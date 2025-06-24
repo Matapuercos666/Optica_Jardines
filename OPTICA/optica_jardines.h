@@ -19,6 +19,9 @@ public:
     Optica_Jardines(QWidget *parent = nullptr);
     ~Optica_Jardines();
 
+private slots:
+    void on_ENTRAR_clicked();
+
 private:
     Ui::Optica_Jardines *ui;
     //Metodo para cargar fuentes

@@ -1,4 +1,5 @@
 #include "optica_jardines.h"
+#include "Mostrador.h"
 
 #include <QApplication>
 

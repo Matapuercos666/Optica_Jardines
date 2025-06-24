@@ -1,7 +1,6 @@
 #include "optica_jardines.h"
 #include "ui_optica_jardines.h"
-#include "empleado.h"
-#include "administrador.h"
+#include "ui_Empleados.h"
 #include <QDebug>
 #include <QLabel>
 
@@ -58,3 +57,9 @@ Optica_Jardines::~Optica_Jardines()
 {
     delete ui;
 }
+
+void Optica_Jardines::on_ENTRAR_clicked()
+{
+    this -> close();
+}
+

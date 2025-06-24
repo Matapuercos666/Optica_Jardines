@@ -9,21 +9,16 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    administrador.cpp \
-    empleado.cpp \
-    gestor_fuentes.cpp \
+    Mostrador.cpp \
     main.cpp \
     optica_jardines.cpp
 
 HEADERS += \
-    administrador.h \
-    empleado.h \
-    gestor_fuentes.h \
+    Mostrador.h \
     optica_jardines.h
 
 FORMS += \
-    administrador.ui \
-    empleado.ui \
+    Mostrador.ui \
     optica_jardines.ui
 
 # Default rules for deployment.
