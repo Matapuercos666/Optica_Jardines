@@ -7,7 +7,7 @@
 #include <QString>
 #include <QDebug>
 
-class FuenteUtil {
+class Fuente {
 public:
     // Llama a este método UNA SOLA VEZ al iniciar
     static void inicializar() {

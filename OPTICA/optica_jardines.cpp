@@ -12,8 +12,9 @@ Optica_Jardines::Optica_Jardines(QWidget *parent) : QMainWindow(parent), ui(new 
     // Aplicar la fuente a la interfaz
 
     if (ui) {
-        ui->CEO->setFont(FuenteUtil::pie());
-        ui->Titulo->setFont(FuenteUtil::titulo());
+        ui->Titulo->setFont(Fuente::titulo());
+        ui->CEO->setFont(Fuente::pie());
+
     }
 
 
