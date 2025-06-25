@@ -1,6 +1,5 @@
 #include "optica_jardines.h"
 #include "ui_optica_jardines.h"
-#include "ui_Empleados.h"
 #include <QDebug>
 #include <QLabel>
 
@@ -60,6 +59,9 @@ Optica_Jardines::~Optica_Jardines()
 
 void Optica_Jardines::on_ENTRAR_clicked()
 {
-    this -> close();
+    EmpleadosWindow = new Empleados(this);
+    EmpleadosWindow->show();
+    this->hide(); // Si quieres ocultar la ventana principal
+    // this->close(); // Si prefieres cerrarla por completo
 }
 

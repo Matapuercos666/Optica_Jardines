@@ -5,6 +5,8 @@
 #include <QDebug>
 #include <QMainWindow>
 
+#include "Empleados.h"   //Segunda ventana
+
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class Optica_Jardines;
@@ -24,6 +26,7 @@ private slots:
 
 private:
     Ui::Optica_Jardines *ui;
+    Empleados *EmpleadosWindow; //Puntero a la ventana empleados
     //Metodo para cargar fuentes
     QFont CargarFuente(const QString &ruta, int tamaño);
     QLabel *tMontserrat;
