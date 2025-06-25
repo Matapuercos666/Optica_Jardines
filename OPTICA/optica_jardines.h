@@ -1,11 +1,10 @@
 #ifndef OPTICA_JARDINES_H
 #define OPTICA_JARDINES_H
-#include <QFontDatabase>
-#include <QLabel>
 #include <QDebug>
 #include <QMainWindow>
 
 #include "Empleados.h"   //Segunda ventana
+#include "Fuentes.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -27,11 +26,5 @@ private slots:
 private:
     Ui::Optica_Jardines *ui;
     Empleados *EmpleadosWindow; //Puntero a la ventana empleados
-    //Metodo para cargar fuentes
-    QFont CargarFuente(const QString &ruta, int tamaño);
-    QLabel *tMontserrat;
-    QLabel *tRaleway;
-    QLabel *tLato;
-    QLabel *tRoboto;
 };
 #endif // OPTICA_JARDINES_H
