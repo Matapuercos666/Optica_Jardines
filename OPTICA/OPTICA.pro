@@ -15,6 +15,7 @@ SOURCES += \
 
 HEADERS += \
     Empleados.h \
+    Fuentes.h \
     optica_jardines.h
 
 FORMS += \
