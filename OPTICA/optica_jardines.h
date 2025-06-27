@@ -3,8 +3,8 @@
 #include <QDebug>
 #include <QMainWindow>
 
-#include "Empleados.h"   //Segunda ventana
 #include "Fuentes.h"
+#include "Empleados.h"   //Segunda ventana
 
 QT_BEGIN_NAMESPACE
 namespace Ui {

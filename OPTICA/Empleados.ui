@@ -37,7 +37,7 @@
        <string>ÓPTICA JARDINES</string>
       </property>
       <property name="alignment">
-       <set>Qt::AlignmentFlag::AlignBottom|Qt::AlignmentFlag::AlignHCenter</set>
+       <set>Qt::AlignmentFlag::AlignCenter</set>
       </property>
      </widget>
     </item>
@@ -47,7 +47,7 @@
        <enum>Qt::Orientation::Vertical</enum>
       </property>
       <property name="sizeType">
-       <enum>QSizePolicy::Policy::Fixed</enum>
+       <enum>QSizePolicy::Policy::Expanding</enum>
       </property>
       <property name="sizeHint" stdset="0">
        <size>
@@ -75,6 +75,15 @@
     </item>
     <item row="3" column="1">
      <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
       <item>
        <widget class="QPushButton" name="pushButton">
         <property name="font">
@@ -82,6 +91,12 @@
           <family>Arial</family>
           <bold>true</bold>
          </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>OpenHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">padding: 8px 8px;</string>
         </property>
         <property name="text">
          <string>Lista De Pacientes</string>
@@ -132,6 +147,12 @@
           <bold>true</bold>
          </font>
         </property>
+        <property name="cursor">
+         <cursorShape>OpenHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">padding: 8px 8px</string>
+        </property>
         <property name="text">
          <string>inventario</string>
         </property>
@@ -148,6 +169,12 @@
           <family>Arial</family>
           <bold>true</bold>
          </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>OpenHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">padding: 8px 8px</string>
         </property>
         <property name="text">
          <string>Punto de venta</string>

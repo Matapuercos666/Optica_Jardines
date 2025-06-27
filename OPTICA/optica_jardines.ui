@@ -13,10 +13,6 @@
   <property name="windowTitle">
    <string>Optica_Jardines</string>
   </property>
-  <property name="styleSheet">
-   <string notr="true">background-color: rgb(241, 250, 238);
-border-color: rgb(230, 57, 70);</string>
-  </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout_3">
     <item>
@@ -28,10 +24,6 @@ border-color: rgb(230, 57, 70);</string>
           <width>16777215</width>
           <height>200</height>
          </size>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">color: rgb(69, 123, 157);
-</string>
         </property>
         <property name="text">
          <string>Óptica Jardines</string>
@@ -81,9 +73,6 @@ border-color: rgb(230, 57, 70);</string>
           <height>0</height>
          </size>
         </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(168, 218, 220);</string>
-        </property>
         <property name="echoMode">
          <enum>QLineEdit::EchoMode::Password</enum>
         </property>
@@ -95,10 +84,10 @@ border-color: rgb(230, 57, 70);</string>
         </property>
        </widget>
       </item>
-      <item row="0" column="2">
+      <item row="1" column="2">
        <layout class="QVBoxLayout" name="verticalLayout_4"/>
       </item>
-      <item row="0" column="0">
+      <item row="1" column="0">
        <layout class="QVBoxLayout" name="verticalLayout_2"/>
       </item>
       <item row="0" column="1">
@@ -120,9 +109,6 @@ border-color: rgb(230, 57, 70);</string>
           <width>0</width>
           <height>0</height>
          </size>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(168, 218, 220);</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignmentFlag::AlignCenter</set>
@@ -162,6 +148,13 @@ border-color: rgb(230, 57, 70);</string>
           <height>16777215</height>
          </size>
         </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>10</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
         <property name="cursor">
          <cursorShape>PointingHandCursor</cursorShape>
         </property>
@@ -169,10 +162,7 @@ border-color: rgb(230, 57, 70);</string>
          <bool>true</bool>
         </property>
         <property name="styleSheet">
-         <string notr="true">background-color: rgb(29, 53, 87);
-border-color: rgb(230, 57, 70);
-font: 900 9pt &quot;Arial&quot;;
-color: rgb(241, 250, 238);</string>
+         <string notr="true">padding: 4px</string>
         </property>
         <property name="text">
          <string>ENTRAR</string>
@@ -227,43 +217,10 @@ color: rgb(241, 250, 238);</string>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <tabstops>
-  <tabstop>ENTRAR</tabstop>
   <tabstop>usuario</tabstop>
   <tabstop>contrasena</tabstop>
+  <tabstop>ENTRAR</tabstop>
  </tabstops>
  <resources/>
- <connections>
-  <connection>
-   <sender>usuario</sender>
-   <signal>textEdited(QString)</signal>
-   <receiver>ENTRAR</receiver>
-   <slot>click()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>354</x>
-     <y>285</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>361</x>
-     <y>390</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>contrasena</sender>
-   <signal>textEdited(QString)</signal>
-   <receiver>ENTRAR</receiver>
-   <slot>click()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>484</x>
-     <y>337</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>458</x>
-     <y>385</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
 </ui>

@@ -10,35 +10,31 @@ public:
     // Llama a este método UNA SOLA VEZ al iniciar la app
     static void inicializar() {
         if (inicializado) return;
-        colorPrincipal   = QColor(26, 35, 126);   // Ejemplo: azul oscuro
-        colorSecundario  = QColor(57, 73, 171);   // Ejemplo: azul medio
-        colorFondo       = QColor(241, 250, 238); // Ejemplo: fondo claro
-        colorTexto       = QColor(33, 33, 33);    // Ejemplo: texto oscuro
-        colorExito       = QColor(76, 175, 80);   // Ejemplo: verde éxito
-        colorAdvertencia = QColor(255, 193, 7);   // Ejemplo: amarillo advertencia
-        colorError       = QColor(244, 67, 54);   // Ejemplo: rojo error
-        colorBorde       = QColor(230, 57, 70); // Ejemplo: gris bordes
+        ColorAzulM      = QColor(69, 123, 157);     //Azul Mediano
+        ColorAzulF      = QColor(29, 53, 87);       //Azul Fuerte
+        ColorAzulC      = QColor(168, 218, 220);    //Azul Claro
+        ColorBlanco     = QColor(241, 250, 238);    //Blanco
+        ColorRojo       = QColor(230, 57, 70);      //Rojo
+        ColorNegro      = QColor(0,0,0);            //Negro
+
         inicializado = true;
     }
 
-    static QColor principal()    { return colorPrincipal; }
-    static QColor secundario()   { return colorSecundario; }
-    static QColor fondo()        { return colorFondo; }
-    static QColor texto()        { return colorTexto; }
-    static QColor exito()        { return colorExito; }
-    static QColor advertencia()  { return colorAdvertencia; }
-    static QColor error()        { return colorError; }
-    static QColor borde()        { return colorBorde; }
+    static QColor AzulMedio()       { return ColorAzulM; }
+    static QColor AzulFuerte()      { return ColorAzulF; }
+    static QColor AzulClaro()       { return ColorAzulC; }
+    static QColor Blanco()          { return ColorBlanco; }
+    static QColor Rojo()            { return ColorRojo; }
+    static QColor Negro()           { return ColorNegro; }
 
 private:
-    static inline QColor colorPrincipal;
-    static inline QColor colorSecundario;
-    static inline QColor colorFondo;
-    static inline QColor colorTexto;
-    static inline QColor colorExito;
-    static inline QColor colorAdvertencia;
-    static inline QColor colorError;
-    static inline QColor colorBorde;
+    static inline QColor ColorAzulM;
+    static inline QColor ColorAzulF;
+    static inline QColor ColorAzulC;
+    static inline QColor ColorBlanco;
+    static inline QColor ColorRojo;
+    static inline QColor ColorNegro;
+
     static inline bool inicializado = false;
 };
 

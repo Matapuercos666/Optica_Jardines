@@ -6,6 +6,9 @@
 #include <QMap>
 #include <QString>
 #include <QDebug>
+#include <QWidget>
+#include <QLabel>
+
 
 class Fuente {
 public:
@@ -26,6 +29,46 @@ public:
     static QFont etiqueta()   { return fuenteEtiqueta; }
     static QFont descripcion(){ return fuenteDescripcion; }
     static QFont pie()        { return fuentePie; }
+
+    //Funciones para aplicar estas fuentes:
+
+    static void AplicarFuenteTitulo(QWidget *ventana) {
+        // Busca todos los QLabel con objectName == "Titulo" de forma recursiva
+        QList<QLabel*> titulos = ventana->findChildren<QLabel*>("Titulo", Qt::FindChildrenRecursively);
+        for (QLabel* lbl : titulos) {
+            lbl->setFont(Fuente::titulo());
+        }
+    }
+
+    static void AplicarFuenteCEO(QWidget *ventana) {
+        QList<QLabel*> ceos = ventana->findChildren<QLabel*>("CEO", Qt::FindChildrenRecursively);
+        for (QLabel* lbl : ceos) {
+            lbl->setFont(Fuente::pie());
+        }
+    }
+
+    static void AplicarFuenteSubtitulo(QWidget *ventana){
+        QList<QLabel*>subtitulos = ventana -> findChildren<QLabel*>("SubTitulo", Qt::FindChildrenRecursively);
+        for (QLabel* lbl : subtitulos){
+            lbl->setFont(Fuente::subtitulo());
+        }
+    }
+
+
+
+
+    // Función para aplicar todas las funciones anteriores
+
+    static void AplicarTodas(QWidget *ventana) {
+        AplicarFuenteTitulo(ventana);
+        AplicarFuenteCEO(ventana);
+        AplicarFuenteSubtitulo(ventana);
+
+    }
+    
+
+
+
 
 private:
     // Métodos y miembros privados

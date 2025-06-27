@@ -1,6 +1,7 @@
 <RCC>
     <qresource prefix="/Imagenes">
         <file>IMAGENES/LOGOS/LOGO.png</file>
+        <file>IMAGENES/LOGOS/LOGO GRIS.jpg</file>
     </qresource>
     <qresource prefix="/fuentes">
         <file>FUENTES/Lato/Lato-Thin.ttf</file>
@@ -9,4 +10,5 @@
         <file>FUENTES/Montserrat/static/Montserrat-Italic.ttf</file>
         <file>FUENTES/Playfair/static/Playfair_9pt_SemiCondensed-Bold.ttf</file>
     </qresource>
+    <qresource prefix="/"/>
 </RCC>

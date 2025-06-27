@@ -2,24 +2,13 @@
 #include "ui_optica_jardines.h"
 #include <QDebug>
 #include <QLabel>
+#include "Fuentes.h"
 
 // Constructor
 Optica_Jardines::Optica_Jardines(QWidget *parent) : QMainWindow(parent), ui(new Ui::Optica_Jardines)
 {
     ui->setupUi(this);
-
-
-    // Aplicar la fuente a la interfaz
-
-    if (ui) {
-        ui->Titulo->setFont(Fuente::titulo());
-        ui->CEO->setFont(Fuente::pie());
-
-    }
-
-
-
-
+    Fuente::AplicarTodas(this);
 }
 
 Optica_Jardines::~Optica_Jardines()
