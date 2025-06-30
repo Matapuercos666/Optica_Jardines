@@ -1,6 +1,5 @@
 #include "optica_jardines.h"
-#include "Paleta_Colores.h"
-
+#include "ESTILOS.h"
 #include <QApplication>
 
 #include <QFontDatabase>

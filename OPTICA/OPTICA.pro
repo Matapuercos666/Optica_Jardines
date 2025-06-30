@@ -16,9 +16,8 @@ SOURCES += \
 
 HEADERS += \
     Administrador.h \
+    ESTILOS.h \
     Empleados.h \
-    Fuentes.h \
-    Paleta_Colores.h \
     optica_jardines.h
 
 FORMS += \

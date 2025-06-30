@@ -3,7 +3,7 @@
 #include <QDebug>
 #include <QMainWindow>
 
-#include "Fuentes.h"
+#include "ESTILOS.H"
 #include "Empleados.h"   //Segunda ventana
 
 QT_BEGIN_NAMESPACE

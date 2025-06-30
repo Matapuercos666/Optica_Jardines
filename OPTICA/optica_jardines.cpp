@@ -2,7 +2,7 @@
 #include "ui_optica_jardines.h"
 #include <QDebug>
 #include <QLabel>
-#include "Fuentes.h"
+#include "ESTILOS.h"
 
 // Constructor
 Optica_Jardines::Optica_Jardines(QWidget *parent) : QMainWindow(parent), ui(new Ui::Optica_Jardines)
