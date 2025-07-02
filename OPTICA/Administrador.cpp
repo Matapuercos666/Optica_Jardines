@@ -7,6 +7,7 @@ Administrador::Administrador(QWidget *parent)
     , ui(new Ui::Administrador)
 {
     ui->setupUi(this);
+    Fuente::AplicarTodas(this);
 }
 
 Administrador::~Administrador()

@@ -4,13 +4,12 @@
 #include <QMainWindow>
 
 #include "ESTILOS.H"
-#include "Empleados.h"   //Segunda ventana
+#include "Empleados.h"      //Segunda ventana
+#include "Administrador.h"  //tercera ventana
 
-QT_BEGIN_NAMESPACE
 namespace Ui {
 class Optica_Jardines;
 }
-QT_END_NAMESPACE
 
 class Optica_Jardines : public QMainWindow
 {
@@ -25,6 +24,10 @@ private slots:
 
 private:
     Ui::Optica_Jardines *ui;
-    Empleados *EmpleadosWindow; //Puntero a la ventana empleados
+
+    //Ppunteros a las siguientes ventanas
+
+    Empleados *EmpleadosWindow;
+    Administrador *AdministradorWindow;
 };
 #endif // OPTICA_JARDINES_H

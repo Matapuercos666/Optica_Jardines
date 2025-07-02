@@ -20,7 +20,7 @@
       <item>
        <widget class="QPushButton" name="pushButton_3">
         <property name="text">
-         <string>PushButton</string>
+         <string>Inventario</string>
         </property>
        </widget>
       </item>
@@ -31,7 +31,7 @@
       <item>
        <widget class="QPushButton" name="pushButton">
         <property name="text">
-         <string>PushButton</string>
+         <string>Lista De Pacientes</string>
         </property>
        </widget>
       </item>
@@ -42,7 +42,7 @@
       <item>
        <widget class="QPushButton" name="pushButton_2">
         <property name="text">
-         <string>PushButton</string>
+         <string>Punto De Venta</string>
         </property>
        </widget>
       </item>
@@ -63,7 +63,7 @@
       <item>
        <widget class="QPushButton" name="pushButton_4">
         <property name="text">
-         <string>PushButton</string>
+         <string>Usuarios</string>
         </property>
        </widget>
       </item>

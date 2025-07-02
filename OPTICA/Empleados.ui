@@ -85,7 +85,10 @@
        <number>0</number>
       </property>
       <item>
-       <widget class="QPushButton" name="pushButton">
+       <widget class="QPushButton" name="Lista">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
         <property name="font">
          <font>
           <family>Arial</family>
@@ -140,7 +143,7 @@
     <item row="7" column="1">
      <layout class="QVBoxLayout" name="verticalLayout_3">
       <item>
-       <widget class="QPushButton" name="pushButton_3">
+       <widget class="QPushButton" name="Inventario">
         <property name="font">
          <font>
           <family>Arial</family>
@@ -163,7 +166,7 @@
     <item row="5" column="1">
      <layout class="QVBoxLayout" name="verticalLayout_2">
       <item>
-       <widget class="QPushButton" name="pushButton_2">
+       <widget class="QPushButton" name="Punto_Venta">
         <property name="font">
          <font>
           <family>Arial</family>
@@ -230,5 +233,54 @@
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>Lista</sender>
+   <signal>clicked()</signal>
+   <receiver>Lista</receiver>
+   <slot>animateClick()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>394</x>
+     <y>313</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>394</x>
+     <y>313</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Punto_Venta</sender>
+   <signal>clicked()</signal>
+   <receiver>Punto_Venta</receiver>
+   <slot>animateClick()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>439</x>
+     <y>378</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>439</x>
+     <y>378</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Inventario</sender>
+   <signal>clicked()</signal>
+   <receiver>Inventario</receiver>
+   <slot>animateClick()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>428</x>
+     <y>440</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>428</x>
+     <y>440</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>
