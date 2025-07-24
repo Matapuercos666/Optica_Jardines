@@ -4,6 +4,7 @@
 #include <QMainWindow>
 
 namespace Ui {
+
 class Lista_Clientes;
 }
 

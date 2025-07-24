@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Empleados</class>
- <widget class="QMainWindow" name="Empleados">
+ <class>Administrador</class>
+ <widget class="QMainWindow" name="Administrador">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>797</width>
+    <width>800</width>
     <height>600</height>
    </rect>
   </property>
@@ -235,9 +235,6 @@ backgroundcolor: rojo();</string>
       </item>
      </layout>
     </item>
-    <item row="1" column="1">
-     <layout class="QVBoxLayout" name="verticalLayout_3"/>
-    </item>
    </layout>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -245,7 +242,7 @@ backgroundcolor: rojo();</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>797</width>
+     <width>800</width>
      <height>22</height>
     </rect>
    </property>
@@ -253,54 +250,5 @@ backgroundcolor: rojo();</string>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
- <connections>
-  <connection>
-   <sender>Lista</sender>
-   <signal>clicked()</signal>
-   <receiver>Lista</receiver>
-   <slot>animateClick()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>394</x>
-     <y>313</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>394</x>
-     <y>313</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>Punto</sender>
-   <signal>clicked()</signal>
-   <receiver>Punto</receiver>
-   <slot>animateClick()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>439</x>
-     <y>378</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>439</x>
-     <y>378</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>Inventario</sender>
-   <signal>clicked()</signal>
-   <receiver>Inventario</receiver>
-   <slot>animateClick()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>428</x>
-     <y>440</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>428</x>
-     <y>440</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
 </ui>

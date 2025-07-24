@@ -11,7 +11,9 @@ CONFIG += c++17
 SOURCES += \
     Administrador.cpp \
     Empleados.cpp \
+    Inventario.cpp \
     Lista_Clientes.cpp \
+    PuntoVenta.cpp \
     main.cpp \
     optica_jardines.cpp
 
@@ -19,13 +21,17 @@ HEADERS += \
     Administrador.h \
     ESTILOS.h \
     Empleados.h \
+    Inventario.h \
     Lista_Clientes.h \
+    PuntoVenta.h \
     optica_jardines.h
 
 FORMS += \
     Administrador.ui \
     Empleados.ui \
+    Inventario.ui \
     Lista_Clientes.ui \
+    PuntoVenta.ui \
     optica_jardines.ui
 
 # Default rules for deployment.
