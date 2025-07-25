@@ -22,7 +22,8 @@ public:
         ColorAzulC      = QColor(168, 218, 220);    //Azul Claro
         ColorBlanco     = QColor(241, 250, 238);    //Blanco
         ColorRojo       = QColor(230, 57, 70);      //Rojo
-        ColorNegro      = QColor(0,0,0);            //Negro
+        ColorNegro      = QColor(0, 0, 0);            //Negro
+        ColorGris       = QColor(211, 211, 211);     //gris
 
         inicializado = true;
     }
@@ -33,6 +34,7 @@ public:
     static QColor Blanco()          { return ColorBlanco; }
     static QColor Rojo()            { return ColorRojo; }
     static QColor Negro()           { return ColorNegro; }
+    static QColor Gris()            { return ColorGris; }
 
 private:
     static inline QColor ColorAzulM;
@@ -41,6 +43,7 @@ private:
     static inline QColor ColorBlanco;
     static inline QColor ColorRojo;
     static inline QColor ColorNegro;
+    static inline QColor ColorGris;
 
     static inline bool inicializado = false;
 };

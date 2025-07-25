@@ -15,25 +15,12 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout">
-    <item row="0" column="0">
+    <item row="2" column="1">
+     <layout class="QVBoxLayout" name="verticalLayout_3"/>
+    </item>
+    <item row="1" column="0">
      <layout class="QGridLayout" name="gridLayout_2">
-      <item row="0" column="1">
-       <spacer name="verticalSpacer">
-        <property name="orientation">
-         <enum>Qt::Orientation::Vertical</enum>
-        </property>
-        <property name="sizeType">
-         <enum>QSizePolicy::Policy::Expanding</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>20</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-      <item row="7" column="1">
+      <item row="8" column="1">
        <widget class="QPushButton" name="Inventario">
         <property name="font">
          <font>
@@ -48,37 +35,11 @@
          <string notr="true">padding: 12px 30px;</string>
         </property>
         <property name="text">
-         <string>inventario</string>
+         <string>INVENTARIO</string>
         </property>
        </widget>
       </item>
-      <item row="1" column="0" colspan="3">
-       <widget class="QLabel" name="Titulo">
-        <property name="text">
-         <string>ÓPTICA JARDINES</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignmentFlag::AlignCenter</set>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="1">
-       <spacer name="verticalSpacer_3">
-        <property name="orientation">
-         <enum>Qt::Orientation::Vertical</enum>
-        </property>
-        <property name="sizeType">
-         <enum>QSizePolicy::Policy::Expanding</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>20</width>
-          <height>50</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-      <item row="5" column="2">
+      <item row="6" column="2">
        <spacer name="horizontalSpacer_2">
         <property name="orientation">
          <enum>Qt::Orientation::Horizontal</enum>
@@ -94,7 +55,7 @@
         </property>
        </spacer>
       </item>
-      <item row="3" column="1">
+      <item row="4" column="1">
        <widget class="QPushButton" name="Lista">
         <property name="enabled">
          <bool>true</bool>
@@ -112,11 +73,11 @@
          <string notr="true">padding: 12px 30px;</string>
         </property>
         <property name="text">
-         <string>Lista De Pacientes</string>
+         <string>PACIENTES</string>
         </property>
        </widget>
       </item>
-      <item row="8" column="1">
+      <item row="9" column="1">
        <spacer name="verticalSpacer_6">
         <property name="orientation">
          <enum>Qt::Orientation::Vertical</enum>
@@ -132,7 +93,7 @@
         </property>
        </spacer>
       </item>
-      <item row="11" column="1">
+      <item row="12" column="1">
        <spacer name="verticalSpacer_2">
         <property name="orientation">
          <enum>Qt::Orientation::Vertical</enum>
@@ -148,7 +109,7 @@
         </property>
        </spacer>
       </item>
-      <item row="5" column="1">
+      <item row="6" column="1">
        <widget class="QPushButton" name="Punto">
         <property name="font">
          <font>
@@ -163,11 +124,11 @@
          <string notr="true">padding: 12px 30px;</string>
         </property>
         <property name="text">
-         <string>Punto de venta</string>
+         <string>PUNTO DE VENTA</string>
         </property>
        </widget>
       </item>
-      <item row="5" column="0">
+      <item row="6" column="0">
        <spacer name="horizontalSpacer">
         <property name="orientation">
          <enum>Qt::Orientation::Horizontal</enum>
@@ -183,7 +144,7 @@
         </property>
        </spacer>
       </item>
-      <item row="9" column="1">
+      <item row="10" column="1">
        <widget class="QPushButton" name="cerrar_sesion">
         <property name="font">
          <font>
@@ -194,14 +155,14 @@
         </property>
         <property name="styleSheet">
          <string notr="true">padding: 12px 30px;
-backgroundcolor: rojo();</string>
+background-color: rgb(230, 57, 70);</string>
         </property>
         <property name="text">
          <string>CERRAR SESIÓN</string>
         </property>
        </widget>
       </item>
-      <item row="6" column="1">
+      <item row="7" column="1">
        <spacer name="verticalSpacer_5">
         <property name="orientation">
          <enum>Qt::Orientation::Vertical</enum>
@@ -217,7 +178,20 @@ backgroundcolor: rojo();</string>
         </property>
        </spacer>
       </item>
-      <item row="4" column="1">
+      <item row="3" column="1">
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Orientation::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="5" column="1">
        <spacer name="verticalSpacer_4">
         <property name="orientation">
          <enum>Qt::Orientation::Vertical</enum>
@@ -233,10 +207,73 @@ backgroundcolor: rojo();</string>
         </property>
        </spacer>
       </item>
+      <item row="0" column="1">
+       <spacer name="verticalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Orientation::Vertical</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Policy::Expanding</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>50</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="2" column="0" colspan="3">
+       <layout class="QGridLayout" name="gridLayout_3">
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <item row="0" column="0">
+         <spacer name="horizontalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Orientation::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLabel" name="SubTitulo">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(69, 123, 157);
+color: rgb(241, 250, 238);</string>
+          </property>
+          <property name="text">
+           <string>ÓPTICA JARDINES</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+          <property name="margin">
+           <number>10</number>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <spacer name="horizontalSpacer_4">
+          <property name="orientation">
+           <enum>Qt::Orientation::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
      </layout>
-    </item>
-    <item row="1" column="1">
-     <layout class="QVBoxLayout" name="verticalLayout_3"/>
     </item>
    </layout>
   </widget>

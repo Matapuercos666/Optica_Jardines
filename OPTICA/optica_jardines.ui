@@ -36,23 +36,38 @@
      </layout>
     </item>
     <item>
-     <widget class="QLabel" name="label_2">
-      <property name="maximumSize">
-       <size>
-        <width>16777215</width>
-        <height>100</height>
-       </size>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">image: url(:/Imagenes/IMAGENES/LOGOS/LOGO.png);</string>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignmentFlag::AlignBottom|Qt::AlignmentFlag::AlignHCenter</set>
-      </property>
-     </widget>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <hintingpreference>PreferDefaultHinting</hintingpreference>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">image: url(:/Imagenes/IMAGENES/LOGOS/LOGO.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="Imagenes_Fuentes.qrc">:/Imagenes/IMAGENES/LOGOS/Logo con fondo gris.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
     </item>
     <item>
      <layout class="QGridLayout" name="gridLayout_2">
@@ -221,6 +236,8 @@
   <tabstop>contrasena</tabstop>
   <tabstop>ENTRAR</tabstop>
  </tabstops>
- <resources/>
+ <resources>
+  <include location="Imagenes_Fuentes.qrc"/>
+ </resources>
  <connections/>
 </ui>

@@ -2,6 +2,7 @@
     <qresource prefix="/Imagenes">
         <file>IMAGENES/LOGOS/LOGO.png</file>
         <file>IMAGENES/LOGOS/LOGO GRIS.jpg</file>
+        <file>IMAGENES/LOGOS/Logo con fondo gris.png</file>
     </qresource>
     <qresource prefix="/fuentes">
         <file>FUENTES/Lato/Lato-Thin.ttf</file>

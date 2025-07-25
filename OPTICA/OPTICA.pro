@@ -9,7 +9,6 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    Administrador.cpp \
     Empleados.cpp \
     Inventario.cpp \
     Lista_Clientes.cpp \
@@ -18,7 +17,6 @@ SOURCES += \
     optica_jardines.cpp
 
 HEADERS += \
-    Administrador.h \
     ESTILOS.h \
     Empleados.h \
     Inventario.h \
@@ -27,7 +25,6 @@ HEADERS += \
     optica_jardines.h
 
 FORMS += \
-    Administrador.ui \
     Empleados.ui \
     Inventario.ui \
     Lista_Clientes.ui \
@@ -41,3 +38,6 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 RESOURCES += \
     Imagenes_Fuentes.qrc
+
+DISTFILES += \
+    IMAGENES/LOGOS/Logo con fondo gris.png

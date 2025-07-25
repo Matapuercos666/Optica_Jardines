@@ -5,7 +5,6 @@
 
 #include "ESTILOS.H"
 #include "Empleados.h"      //Segunda ventana
-#include "Administrador.h"  //tercera ventana
 
 namespace Ui {
 class Optica_Jardines;
@@ -28,6 +27,5 @@ private:
     //Ppunteros a las siguientes ventanas
 
     Empleados *EmpleadosWindow;
-    Administrador *AdministradorWindow;
 };
 #endif // OPTICA_JARDINES_H

@@ -44,17 +44,18 @@ int main(int argc, char *argv[])
                 "   color: " + PaletaColores::AzulMedio().name() + ";"
                 "}"
             )
-            .arg(PaletaColores::Blanco().name())            // %1 fondo general
+            .arg(PaletaColores::Gris().name())              // %1 posible fondo
             .arg(PaletaColores::Negro().name())             // %2 texto general
             .arg(PaletaColores::AzulFuerte().name())        // %3 fondo botón
             .arg(PaletaColores::Blanco().name())            // %4 texto botón
             .arg(PaletaColores::Negro().name())             // %5 borde botón
             .arg(PaletaColores::AzulClaro().name())         // %6 fondo campos de texto
             .arg(PaletaColores::Negro().name())             // %7 texto campos de texto
-            .arg(PaletaColores::Blanco().name())            // %8 borde campos de texto
+            .arg(PaletaColores::Negro().name())            // %8 borde campos de texto
             .arg(PaletaColores::Blanco().name())            // %9 fondo tablas
             .arg(PaletaColores::Negro().name())             // %10 texto tablas
             .arg(PaletaColores::Negro().name())             // %11 borde tablas
+            .arg(PaletaColores::Rojo().name())              // %12 posible fondo
         );
 
 
