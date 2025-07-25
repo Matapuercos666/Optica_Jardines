@@ -15,6 +15,9 @@ public:
     explicit Inventario(QWidget *parent = nullptr);
     ~Inventario();
 
+private slots:
+    void Boton_Regresar();
+
 private:
     Ui::Inventario *ui;
 };

@@ -112,7 +112,7 @@
        <item row="0" column="0">
         <layout class="QHBoxLayout" name="horizontalLayout_5">
          <item>
-          <widget class="QToolButton" name="toolButton">
+          <widget class="QToolButton" name="Regresar">
            <property name="layoutDirection">
             <enum>Qt::LayoutDirection::LeftToRight</enum>
            </property>

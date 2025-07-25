@@ -21,7 +21,7 @@ public:
         ColorAzulF      = QColor(29, 53, 87);       //Azul Fuerte
         ColorAzulC      = QColor(168, 218, 220);    //Azul Claro
         ColorBlanco     = QColor(241, 250, 238);    //Blanco
-        ColorRojo       = QColor(230, 57, 70);      //Rojo
+        ColorRojo       = QColor(218, 50, 24);      //Rojo
         ColorNegro      = QColor(0, 0, 0);            //Negro
         ColorGris       = QColor(211, 211, 211);     //gris
 
@@ -59,7 +59,7 @@ public:
         if (inicializado) return;
         // Precarga fuentes con tamaños estándar
         fuenteTitulo     = cargarFuente(":/fuentes/FUENTES/Playfair/static/Playfair_9pt_SemiCondensed-Bold.ttf", 48);
-        fuenteSubtitulo  = cargarFuente(":/fuentes/FUENTES/Raleway/static/Raleway-ExtraLight.ttf", 48);
+        fuenteSubtitulo  = cargarFuente(":/fuentes/FUENTES/Raleway/static/Raleway-ExtraLight.ttf", 20);
         fuentePie        = cargarFuente(":/fuentes/FUENTES/Montserrat/static/Montserrat-Italic.ttf", 9);
         fuenteEtiqueta   = cargarFuente(":/fuentes/FUENTES/Lato/Lato-Thin.ttf", 9);
         fuenteDescripcion= cargarFuente(":/fuentes/FUENTES/Roboto_Condensed/static/RobotoCondensed-Regular.ttf", 48);

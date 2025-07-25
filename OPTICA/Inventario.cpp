@@ -8,10 +8,18 @@ Inventario::Inventario(QWidget *parent)
 {
     ui->setupUi(this);
     Fuente::AplicarTodas(this);
-
+    connect(ui->Regresar, &QPushButton::clicked, this, &Inventario::Boton_Regresar);
 }
 
 Inventario::~Inventario()
 {
     delete ui;
+}
+
+void Inventario::Boton_Regresar()
+{
+    if (parentWidget()) {
+        parentWidget()->show();
+    }
+    this->close();
 }

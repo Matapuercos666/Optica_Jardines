@@ -178,17 +178,23 @@
         <item row="0" column="0" colspan="3">
          <layout class="QGridLayout" name="gridLayout_2">
           <item row="0" column="0">
-           <widget class="QToolButton" name="toolButton_5">
+           <widget class="QToolButton" name="Regresar">
             <property name="text">
              <string>...</string>
             </property>
             <property name="icon">
              <iconset theme="QIcon::ThemeIcon::DocumentRevert"/>
             </property>
+            <property name="autoRaise">
+             <bool>true</bool>
+            </property>
+            <property name="arrowType">
+             <enum>Qt::ArrowType::LeftArrow</enum>
+            </property>
            </widget>
           </item>
           <item row="0" column="1" rowspan="2">
-           <widget class="QLabel" name="label_3">
+           <widget class="QLabel" name="SubTitulo">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
               <horstretch>0</horstretch>
@@ -197,6 +203,30 @@
             </property>
             <property name="text">
              <string>Nombre de empleado</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QToolButton" name="toolButton">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(211, 211, 211);
+border-color: rgb(211, 211, 211);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="Imagenes_Fuentes.qrc">
+              <normaloff>:/Imagenes/IMAGENES/LOGOS/LOGO GRIS.jpg</normaloff>:/Imagenes/IMAGENES/LOGOS/LOGO GRIS.jpg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>50</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="popupMode">
+             <enum>QToolButton::ToolButtonPopupMode::InstantPopup</enum>
             </property>
            </widget>
           </item>
@@ -247,6 +277,8 @@
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <resources/>
+ <resources>
+  <include location="Imagenes_Fuentes.qrc"/>
+ </resources>
  <connections/>
 </ui>

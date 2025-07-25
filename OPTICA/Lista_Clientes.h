@@ -16,6 +16,9 @@ public:
     explicit Lista_Clientes(QWidget *parent = nullptr);
     ~Lista_Clientes();
 
+private slots:
+    void Boton_Regresar();
+
 private:
     Ui::Lista_Clientes *ui;
 };

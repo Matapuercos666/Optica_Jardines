@@ -15,6 +15,9 @@ public:
     explicit PuntoVenta(QWidget *parent = nullptr);
     ~PuntoVenta();
 
+private slots:
+    void Boton_Regresar();
+
 private:
     Ui::PuntoVenta *ui;
 };

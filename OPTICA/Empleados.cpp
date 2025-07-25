@@ -18,6 +18,11 @@ Empleados::Empleados(QWidget *parent)
     connect(ui->Inventario, &QPushButton::clicked, this, &Empleados::Boton_Inventario);
 }
 
+Empleados::~Empleados()
+{
+    delete ui;
+}
+
 void Empleados::Boton_Lista()
 {
     if (!ListaWindow || ListaWindow->isHidden())
@@ -25,6 +30,7 @@ void Empleados::Boton_Lista()
         delete ListaWindow;
         ListaWindow = new Lista_Clientes(this);
         ListaWindow->setAttribute(Qt::WA_DeleteOnClose);
+        connect(ListaWindow, &QObject::destroyed, this, [this]() { ListaWindow = nullptr; });
     }
     ListaWindow->show();
     this->hide();
@@ -34,9 +40,13 @@ void Empleados::Boton_Punto()
 {
     if (!Punto_Venta_Window || Punto_Venta_Window->isHidden())
     {
-        delete Punto_Venta_Window;
+        if (Punto_Venta_Window)
+        {
+            delete Punto_Venta_Window;
+        }
         Punto_Venta_Window = new PuntoVenta(this);  // Se hace padre de la ventana punto de venta para poder recuperar la referencia
         Punto_Venta_Window->setAttribute(Qt::WA_DeleteOnClose);
+        connect(Punto_Venta_Window, &QObject::destroyed, this, [this]() { Punto_Venta_Window = nullptr; });
     }
     Punto_Venta_Window->show();
     this->hide();
@@ -49,12 +59,8 @@ void Empleados::Boton_Inventario()
         delete InventarioWindow;
         InventarioWindow = new Inventario(this);
         InventarioWindow->setAttribute(Qt::WA_DeleteOnClose);
+        connect(InventarioWindow, &QObject::destroyed, this, [this]() { InventarioWindow = nullptr; });
     }
     InventarioWindow->show();
     this->hide();
-}
-
-Empleados::~Empleados()
-{
-    delete ui;
 }

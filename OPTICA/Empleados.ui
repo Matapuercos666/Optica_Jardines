@@ -19,7 +19,7 @@
      <layout class="QVBoxLayout" name="verticalLayout_3"/>
     </item>
     <item row="1" column="0">
-     <layout class="QGridLayout" name="gridLayout_2">
+     <layout class="QGridLayout" name="gridLayout_2" rowstretch="3,0,0,0,0,0,0,0,0,0,0,0,5">
       <item row="8" column="1">
        <widget class="QPushButton" name="Inventario">
         <property name="font">
@@ -111,6 +111,9 @@
       </item>
       <item row="6" column="1">
        <widget class="QPushButton" name="Punto">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
         <property name="font">
          <font>
           <family>Arial</family>
@@ -242,10 +245,9 @@ background-color: rgb(230, 57, 70);</string>
          </spacer>
         </item>
         <item row="0" column="1">
-         <widget class="QLabel" name="SubTitulo">
+         <widget class="QLabel" name="Titulo">
           <property name="styleSheet">
-           <string notr="true">background-color: rgb(69, 123, 157);
-color: rgb(241, 250, 238);</string>
+           <string notr="true"/>
           </property>
           <property name="text">
            <string>ÓPTICA JARDINES</string>
@@ -290,54 +292,5 @@ color: rgb(241, 250, 238);</string>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
- <connections>
-  <connection>
-   <sender>Lista</sender>
-   <signal>clicked()</signal>
-   <receiver>Lista</receiver>
-   <slot>animateClick()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>394</x>
-     <y>313</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>394</x>
-     <y>313</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>Punto</sender>
-   <signal>clicked()</signal>
-   <receiver>Punto</receiver>
-   <slot>animateClick()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>439</x>
-     <y>378</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>439</x>
-     <y>378</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>Inventario</sender>
-   <signal>clicked()</signal>
-   <receiver>Inventario</receiver>
-   <slot>animateClick()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>428</x>
-     <y>440</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>428</x>
-     <y>440</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
 </ui>

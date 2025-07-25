@@ -40,6 +40,11 @@ int main(int argc, char *argv[])
             "   color: %10;"
             "   border: 1px solid %11;"
             "}"
+            "QToolButton {"
+            "   background-color: %12;"
+            "   color: %13;"
+            "   border: 1px solid %14;"
+            "}"
             "QLabel#Titulo {"                                   // Afecta a TODOS los QLabel con objectName="Titulo"
                 "   color: " + PaletaColores::AzulMedio().name() + ";"
                 "}"
@@ -55,7 +60,9 @@ int main(int argc, char *argv[])
             .arg(PaletaColores::Blanco().name())            // %9 fondo tablas
             .arg(PaletaColores::Negro().name())             // %10 texto tablas
             .arg(PaletaColores::Negro().name())             // %11 borde tablas
-            .arg(PaletaColores::Rojo().name())              // %12 posible fondo
+            .arg(PaletaColores::Rojo().name())             // %12 fondo de los qtoolboton
+            .arg(PaletaColores::AzulFuerte().name())        // %13 figurita de los qtoolboton
+            .arg(PaletaColores::Negro().name())             // %14 borde qtoolboton
         );
 
 

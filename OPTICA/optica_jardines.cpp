@@ -5,7 +5,7 @@
 #include "ESTILOS.h"
 
 // Constructor
-Optica_Jardines::Optica_Jardines(QWidget *parent) : QMainWindow(parent), ui(new Ui::Optica_Jardines)
+Optica_Jardines::Optica_Jardines(QWidget *parent) : QMainWindow(parent), ui(new Ui::Optica_Jardines), EmpleadosWindow(nullptr)
 {
     ui->setupUi(this);
     Fuente::AplicarTodas(this);
